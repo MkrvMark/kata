@@ -1,0 +1,584 @@
+body {
+  font-family: "Barlow", sans-serif;
+  background: #EFF6FF;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    position: relative;
+    max-width: 1500px;
+    margin: 100px auto;
+    width: 90%;
+    background: #FFFFFF;
+    display: flex;
+    -webkit-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+  }
+  .container .logo {
+    position: absolute;
+    width: 10%;
+    top: 3%;
+    left: 3%;
+    height: 10%;
+  }
+  .container img {
+    width: 50%;
+  }
+  .container form {
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+    color: #2A4A5C;
+  }
+  .container form .form_title {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .container form .form_text {
+    font-size: 24px;
+    font-weight: 300;
+    color: #767676;
+    margin-bottom: 60px;
+  }
+  .container form .container_button {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container form .container_button .btn {
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 46%;
+  }
+  .container form .container_button .btn svg {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .container form .container_button .btn .btn_info {
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-left: 10px;
+  }
+  .container form .container_button .btn_fb {
+    background: #255A9B;
+  }
+  .container form .container_button .btn_li {
+    background: #0076B6;
+  }
+  .container form .or {
+    margin: 40px auto 60px;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    height: 20px;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: center;
+  }
+  .container form .or p {
+    font-weight: 600;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    z-index: 3;
+    background: #FFFFFF;
+    height: 25px;
+    width: 35px;
+    text-transform: uppercase;
+    color: #2A4A5C;
+  }
+  .container form .investor_info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container form .investor_info .investor_radio {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .container form .investor_info .investor_radio input {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+  }
+  .container form .investor_info .investor_radio label {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: baseline;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .container form .investor_info .investor_radio label p {
+    color: #767676;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .container form .investor_title {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .container form .investor_text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+  .container form .investor_help {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 50%;
+    color: #767676;
+    -webkit-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    border: 10px solid transparent;
+    border-radius: 10px;
+  }
+  .container form .form_agree {
+    display: flex;
+    align-items: center;
+  }
+  .container form .form_agree input {
+    margin: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 0;
+  }
+  .container form .form_agree p {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #767676;
+  }
+  .container form .submit {
+    margin-top: 40px;
+    width: 46%;
+    border: 15px solid transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background: #3698FB;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .container form .input_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .container form .input_info .input_email, .container form .input_info .input_tel {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #EEEEEE;
+    width: 46%;
+  }
+  .container form .input_info .input_email label, .container form .input_info .input_tel label {
+    color: #767676;
+  }
+  .container form .input_info .input_email input, .container form .input_info .input_tel input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+  }
+  .container form .input_info .input_email input:focus-visible, .container form .input_info .input_tel input:focus-visible {
+    outline: none;
+  }
+  .container form .input_info .input_email {
+    border-left-color: #3698FB;
+  }
+}
+@media (max-width: 1279px) {
+  .container {
+    position: relative;
+    max-width: 1500px;
+    margin: 75px auto;
+    width: 90%;
+    background: #FFFFFF;
+    display: flex;
+    -webkit-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+  }
+  .container .logo {
+    position: absolute;
+    width: 10%;
+    top: 3%;
+    left: 3%;
+    height: 10%;
+  }
+  .container img {
+    width: 50%;
+  }
+  .container form {
+    width: 40%;
+    margin: auto;
+    padding: 35px;
+    color: #2A4A5C;
+  }
+  .container form .form_title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .container form .form_text {
+    font-size: 20px;
+    font-weight: 300;
+    color: #767676;
+    margin-bottom: 40px;
+  }
+  .container form .container_button {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container form .container_button .btn {
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 46%;
+  }
+  .container form .container_button .btn svg {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .container form .container_button .btn .btn_info {
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .container form .container_button .btn_fb {
+    background: #255A9B;
+  }
+  .container form .container_button .btn_li {
+    background: #0076B6;
+  }
+  .container form .or {
+    margin: 30px auto 50px;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    height: 20px;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: center;
+  }
+  .container form .or p {
+    font-weight: 600;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    z-index: 3;
+    background: #FFFFFF;
+    height: 25px;
+    width: 35px;
+    text-transform: uppercase;
+    color: #2A4A5C;
+  }
+  .container form .investor_info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container form .investor_info .investor_radio {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .container form .investor_info .investor_radio input {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+  }
+  .container form .investor_info .investor_radio label {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: baseline;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .container form .investor_info .investor_radio label p {
+    color: #767676;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .container form .investor_title {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .container form .investor_text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+  .container form .investor_help {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 100%;
+    color: #767676;
+    -webkit-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    border: 10px solid transparent;
+    border-radius: 10px;
+  }
+  .container form .form_agree {
+    display: flex;
+    align-items: center;
+  }
+  .container form .form_agree input {
+    margin: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 0;
+  }
+  .container form .form_agree p {
+    margin-left: 10px;
+    font-size: 10px;
+    color: #767676;
+  }
+  .container form .submit {
+    margin-top: 30px;
+    width: 46%;
+    border: 15px solid transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background: #3698FB;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .container form .input_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .container form .input_info .input_email, .container form .input_info .input_tel {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #EEEEEE;
+    width: 46%;
+  }
+  .container form .input_info .input_email label, .container form .input_info .input_tel label {
+    color: #767676;
+  }
+  .container form .input_info .input_email input, .container form .input_info .input_tel input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+  }
+  .container form .input_info .input_email input:focus-visible, .container form .input_info .input_tel input:focus-visible {
+    outline: none;
+  }
+  .container form .input_info .input_email {
+    border-left-color: #3698FB;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+    max-width: 1500px;
+    margin: 75px auto;
+    width: 90%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+  }
+  .container .logo {
+    position: absolute;
+    width: 20%;
+    top: 1%;
+    left: 5%;
+    height: 5%;
+  }
+  .container img {
+    width: 100%;
+  }
+  .container form {
+    max-width: 90%;
+    width: auto;
+    margin: auto;
+    padding: 15px;
+    color: #2A4A5C;
+  }
+  .container form .form_title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .container form .form_text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #767676;
+    margin-bottom: 25px;
+  }
+  .container form .container_button {
+    display: flex;
+    flex-direction: column;
+  }
+  .container form .container_button .btn {
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+  }
+  .container form .container_button .btn svg {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .container form .container_button .btn .btn_info {
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .container form .container_button .btn_fb {
+    background: #255A9B;
+  }
+  .container form .container_button .btn_li {
+    background: #0076B6;
+  }
+  .container form .or {
+    margin: 30px auto 50px;
+    text-align: center;
+    width: 50%;
+    position: relative;
+    height: 20px;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: center;
+  }
+  .container form .or p {
+    font-weight: 600;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    z-index: 3;
+    background: #FFFFFF;
+    height: 25px;
+    width: 35px;
+    text-transform: uppercase;
+    color: #2A4A5C;
+  }
+  .container form .investor_info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container form .investor_info .investor_radio {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .container form .investor_info .investor_radio input {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+  }
+  .container form .investor_info .investor_radio label {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: baseline;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .container form .investor_info .investor_radio label p {
+    color: #767676;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .container form .investor_title {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .container form .investor_text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+  .container form .investor_help {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: auto;
+    color: #767676;
+    -webkit-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 20px 2px rgba(34, 60, 80, 0.2);
+    border: 10px solid transparent;
+    border-radius: 10px;
+  }
+  .container form .form_agree {
+    display: flex;
+    align-items: center;
+  }
+  .container form .form_agree input {
+    margin: 0;
+    height: 14px;
+    width: 14px;
+    border-radius: 0;
+  }
+  .container form .form_agree p {
+    margin-left: 10px;
+    font-size: 10px;
+    color: #767676;
+  }
+  .container form .submit {
+    margin-top: 30px;
+    width: 100%;
+    border: 15px solid transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background: #3698FB;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .container form .input_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .container form .input_info .input_email, .container form .input_info .input_tel {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #EEEEEE;
+    width: 46%;
+  }
+  .container form .input_info .input_email label, .container form .input_info .input_tel label {
+    color: #767676;
+  }
+  .container form .input_info .input_email input, .container form .input_info .input_tel input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+  }
+  .container form .input_info .input_email input:focus-visible, .container form .input_info .input_tel input:focus-visible {
+    outline: none;
+  }
+  .container form .input_info .input_email {
+    border-left-color: #3698FB;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
